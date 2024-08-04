@@ -1,0 +1,217 @@
+/* General styles for the nav wrapper */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Styles for the brand logo */
+.nav-wrapper .brand-logo {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* Styles for the hamburger menu */
+.sidenav-trigger.left {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+/* Styles for the navigation links */
+.nav-wrapper ul {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  justify-content: flex-end;
+  width: 100%;
+  /* Ensures the ul takes the full width */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for individual nav items */
+.nav-wrapper ul li {
+  list-style: none;
+}
+
+/* Styles for the search bar */
+.nav-search .input-field {
+  width: 300px;
+  justify-content: flex-end;
+  /* Adjust the width as needed */
+}
+
+.input-field input {
+  width: 100%;
+}
+
+.nav-wrapper ul .nav-search {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for sidenav links */
+.sidenav {
+  padding-top: 20px;
+}
+
+.sidenav li {
+  margin: 10px 0;
+}
+
+ /* Ensure the video container takes up the full width of the viewport */
+ .video-container {
+  position: relative;
+   width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Ensure the video covers the width of the container and maintains aspect ratio */
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* Adjust height automatically to maintain aspect ratio */
+}
+
+/* Optional: Adjust the height of the video container */
+.video-container {
+  height: 56.25vw;
+  /* Adjust height based on aspect ratio, e.g., 16:9 */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFEFDE;
+  text-align: center;
+  z-index: 10;
+}
+
+.caption {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #ff5722;
+  /* Example button color */
+  color: #FFEFDE;
+}
+
+/* Define the grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* 75% and 25% width */
+  width: 100%;
+  margin-top: 0px;
+  /* Space from the element above */
+  gap: 0;
+  /* No gap between columns */
+  align-items: stretch;
+  /* Ensure items stretch to fit their grid area */
+}
+
+/* Text box */
+.text-box {
+  padding: 5px;
+  /* Optional: add padding */
+  display: flex;
+  align-items: stretch;
+  /* Stretch the text box to fill the container's height */
+  box-sizing: auto;
+  /* Include padding and border in the element's total width and height */
+  background-color: #FFEFDE;
+}
+
+/* Image box */
+.image-box {
+  display: flex;
+  justify-content: center;
+  /* Center the image horizontally */
+  align-items: center;
+  /* Center the image vertically */
+  padding: 0;
+  /* Remove any default padding */
+}
+
+/* Image within the image-box */
+.image-box img {
+  max-width: 100%;
+  /* Ensure the image scales correctly */
+  height: 100%;
+  /* Ensure the image height matches the height of the image box */
+  object-fit: cover;
+  /* Ensure the image covers the container without distortion */
+  margin: 0;
+  /* Remove any margin */
+}
+
+.faq{
+    padding: 5px;
+}
+
+.slides {
+  height: 50%;
+  /* Adjust this value as needed */
+  overflow: hidden;
+  /* Ensure content does not overflow */
+  position: relative;
+  /* Ensure child positioning is relative to the parent */
+}
+
+.slides img {
+  width: 100%;
+  /* Ensure image scales with the height adjustment */
+  height: auto;
+  /* Maintain aspect ratio of the image */
+}
+
+.half-slides .caption {
+  position: absolute;
+  /* Position caption inside the <li> */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  /* Optional: Add padding if needed */
+  background: rgba(0, 0, 0, 0.5);
+  /* Optional: Add a semi-transparent background for better readability */
+  color: #fff;
+  /* Text color */
+}
+
+.image-box-2 {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  /* Ensures any overflow is hidden */
+  position: relative;
+  /* Ensures that the image is contained within the div */
+}
+
+.image-box-image-2 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  /* Ensures the image covers the box while maintaining aspect ratio */
+  display: block;
+  /* Remove any extra space below the image */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
